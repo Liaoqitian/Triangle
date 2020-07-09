@@ -23,8 +23,8 @@ python triangle.py
 
 ## Basic Usage
 Input the side lengths of the triangle, the program returns: 
-1. Angles (degrees) 
-2. Area
-3. Radius of the inscribed circle
-4. Radius of the circumscirbed circle 
-5. Plot of the triangle 
+- Three angles (degrees) 
+- Area of the triangle
+- Radius of the inscribed circle
+- Radius of the circumscirbed circle 
+- Plot of the triangle 
