@@ -9,6 +9,7 @@ Provides everything you need to know about a triangle with known side lengths.
   - [Examples](#examples)
 
 ## Interface Demonstration
+![alt text](https://github.com/Liaoqitian/Triangle/blob/master/Interface%20Demo.png "Interface Demo")
 
 ## Basic Setup 
 Navigate to desktop and clone the repository to your local host: 
