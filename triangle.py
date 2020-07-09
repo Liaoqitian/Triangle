@@ -1,5 +1,6 @@
 import math
 import matplotlib.pyplot as plt
+
 class triangle: 
     def __init__(self):
         self.a = 0
@@ -11,8 +12,8 @@ class triangle:
         self.area = 0
         self.inscribed_radius = 0
         self.circumscribed_radius = 0
-        self.x_cor = []
-        self.y_cor = []
+        self.x_coordinates = []
+        self.y_coordinates = []
     def state(self):
         print("Here are the properties of the triangle:")
         print("a = {}".format(self.a))
@@ -44,10 +45,10 @@ class triangle:
         A_y = 0
         B_x = math.cos(math.radians(self.A)) * self.c
         B_y = math.sin(math.radians(self.A)) * self.c
-        C_x = self.b 
-        C_y = 0 
-        self.x_cor = [A_x, B_x, C_x, A_x]
-        self.y_cor = [A_y, B_y, C_y, A_y]
+        C_x = self.b
+        C_y = 0
+        self.x_coordinates = [A_x, B_x, C_x, A_x]
+        self.y_coordinates = [A_y, B_y, C_y, A_y]
     def measure_inscribed_radius(self):
         self.inscribed_radius = round(2 * self.area / (self.a + self.b + self.c), 2)
     def measure_circumscribed_radius(self):
@@ -86,14 +87,14 @@ class triangle:
 
 if __name__ == '__main__':
     Triangle = triangle()
-    print('This is a new triangle!')
+    print('Please input the side length for your triangle.')
     while True: 
         Triangle.a = float(input("Input a: "))
         Triangle.b = float(input("Input b: "))
         Triangle.c = float(input("Input c: "))
         if not Triangle.integrity_check(): 
-            print("Wrong Input! Invalid Triangle!")
+            print("It is an invalid Triangle!")
         else: 
             Triangle.process_triangle()
-            plt.plot(Triangle.x_cor,Triangle.y_cor)
+            plt.plot(Triangle.x_coordinates, Triangle.y_coordinates, color = 'green', linewidth = 3)
             plt.show()
