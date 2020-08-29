@@ -21,7 +21,7 @@ Then to run the program, go to the directory and run
 python triangle.py
 ```
 
-## Basic Usage
+## Basic Application
 Input the side lengths of the triangle, the program returns: 
 - Three angles (degrees) 
 - Area of the triangle
