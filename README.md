@@ -1,6 +1,6 @@
 # Triangle
 
-Provides everything you need to know about a triangle with known side lengths.
+Provides detailed information about a triangle with known side lengths.
 
 ## Table of Contents
   - [Interface Demonstration](#Interface-Demonstration)
